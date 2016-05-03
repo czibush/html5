@@ -1,4 +1,4 @@
-function move(pname,px,py,pmap){
+function clbpqf(pname,px,py,pmap){
 
 				if(pname == "blue"){
 				
