@@ -10,14 +10,6 @@ function clbpqf(pname,px,py,pmap){
 					else if($("#m"+( px + 1)+"_"+( py )).hasClass("field") && $("#m"+(px + 1)+"_"+( py )).html() == "1") direction = 3; 
 					else direction = Math.floor(Math.random()*4);
 					
-					//alert($("#m"+(x)+"_"+( y + 1)).html());
-					
-					/*alert(   "jelenlegi pos: " + px + " " + py +  "\n" +
-							 "le: " + $("#m"+(px)+"_"+( py + 1)).html() + "\n" +
-						     "bal: " + $("#m"+(px -1 )+"_"+( py  )).html() +  "\n" +
-							 "fel: " + $("#m"+(px )+"_"+( py -1)).html() +  "\n" +
-							 "jobb: " + $("#m"+(px + 1)+"_"+( py )).html() +  "\n" +
-							 "eredmeny: " + direction);*/
 							
 					fel = $("#m"+( px )+"_"+( py - 1));
 					bal = $("#m"+( px - 1 )+"_"+( py ));
@@ -80,4 +72,12 @@ function clbpqf(pname,px,py,pmap){
 					walk: Math.floor(Math.random()*4)
 					});
 				}
-			}
+}
+
+function move(pname,px,py,pmap){
+	 $("body").trigger({
+					type: "refreshmap",
+					name: pname,
+					walk: Math.floor(Math.random()*4)
+					});
+}
