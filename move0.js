@@ -1,6 +1,4 @@
 function clbpqf(pname,px,py,pmap){
-
-				if(pname == "blue"){
 				
 					direction = 0;
 
@@ -63,16 +61,8 @@ function clbpqf(pname,px,py,pmap){
 					name: pname,
 					walk: direction
 					});
-				}
-				if(pname != "blue")
-				{
-				     $("body").trigger({
-					type: "refreshmap",
-					name: pname,
-					walk: Math.floor(Math.random()*4)
-					});
-				}
 }
+
 
 function move(pname,px,py,pmap){
 	 $("body").trigger({
